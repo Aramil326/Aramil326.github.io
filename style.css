@@ -360,7 +360,7 @@ section {
     }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 599px) {
     :root {
         --wedding-section-width: 300px;
         --headind-width: 100%;
