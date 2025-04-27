@@ -3,6 +3,7 @@
 :root {
     --headind-width: 70%;
     --second-color: #dbaf96;
+    --wedding-section-width: 460px
 }
 
 /* Сброс */
@@ -45,12 +46,6 @@ section {
 .block._visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-@media (min-width: 1200px) {
-    section {
-        padding: 0 calc(50% - 590px);
-    }
 }
 
 /* ============================
@@ -108,7 +103,7 @@ section {
 }
 
 .wedding__heading_name {
-    width: 460px;
+    width: var(--wedding-section-width);
 
     text-transform: none;
     font-size: 30px;
@@ -119,7 +114,7 @@ section {
 .wedding__text {
     font-size: 20px;
     text-transform: none;
-    width: 460px;
+    width: var(--wedding-section-width);
     margin: 0 auto 30px;
     text-align: start;
 }
@@ -136,7 +131,7 @@ section {
 }
 
 .wedding__line {
-    width: 460px;
+    width: var(--wedding-section-width);
     height: 1px;
     background-color: var(--second-color);
     opacity: .6;
@@ -252,9 +247,15 @@ section {
 .colors__heading, .timer__heading {
     font-size: 40px;
     width: var(--headind-width);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: start;
     font-weight: 300;
+}
+
+.colors__heading__text {
+    text-transform: none;
+    font-weight: 300;
+    margin-bottom: 50px;
 }
 
 .colors__list {
@@ -350,4 +351,175 @@ section {
     content: ':';
     position: absolute;
     right: -15px;
+}
+
+
+@media (min-width: 1200px) {
+    section {
+        padding: 0 calc(50% - 590px);
+    }
+}
+
+@media (max-width: 599px) {
+    :root {
+        --wedding-section-width: 300px;
+        --headind-width: 100%;
+    }
+
+    section {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .invitation {
+        margin-bottom: 25px;
+    }
+
+    .invitation__title {
+        margin-top: 20px;
+        line-height: 50px;
+    }
+
+    .invitation__title--large {
+        font-size: 30px;
+    }
+
+    .invitation__subtitle {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .invitation__date {
+        font-size: 20px;
+    }
+
+    .hero-image {
+        height: auto;
+    }
+
+    .wedding {
+        margin-bottom: 40px;
+    }
+
+    .wedding__heading {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .wedding__heading_name {
+        font-size: 20px;
+        margin: 0 auto 25px auto;
+    }
+
+    .wedding__text {
+        font-size: 15px;
+    }
+
+    .wedding__date {
+        font-size: 20px;
+    }
+
+    .guests {
+        margin-bottom: 40px;
+    }
+
+    .guests__heading, .timer__heading, .program__heading, .colors__heading, .contact_info__title {
+        font-size: 25px;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .guests__column {
+        margin-right: 5px;
+    }
+
+    .guests__item {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .timer__items {
+        font-size: 20px;
+        justify-content: space-between;
+    }
+
+    .timer__item {
+        font-size: 40px;
+    }
+
+    .program-card {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .program-card__image-wrapper {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .program-card__image {
+        width: 100%;
+    }
+
+    .program-card__title {
+        font-size: 20px;
+    }
+
+    .program-card__info-item {
+        height: 60px;
+    }
+
+    .program-card__info-item h4 {
+        font-size: 19px;
+        width: 35%;
+    }
+
+    .colors__heading__text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .colors__item {
+        width: 50px;
+        height: 80px;
+    }
+
+    .contact_info {
+        flex-direction: column;
+    }
+
+    .contact_info__image-wrapper {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .contact_info__content {
+        width: 100%;
+    }
+
+    .contact_info__image {
+        width: 100%;
+    }
+
+    .contact_info__title {
+        width: 100%;
+    }
+
+    .contact_info_text {
+        font-size: 20px;
+    }
+
+    .contact_info__content_image {
+        width: 20%;
+    }
+
+    .contact_info__number {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) {
 }

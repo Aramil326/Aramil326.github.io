@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     let columnsContainer = document.getElementById('columns');
-    const maxPerColumn = 10;
+    let maxPerColumn = window.matchMedia('(max-width: 599px)').matches ? 21  : 10;
     let col;
     guestsList.forEach((name, i) => {
         if (i % maxPerColumn === 0) {
