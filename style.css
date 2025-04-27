@@ -48,17 +48,17 @@ section {
 }
 
 /* Сетки и адаптив */
-@media (min-width: 576px) {
-    section {
-        padding: 0 calc(50% - 270px);
-    }
-}
+/*@media (min-width: 576px) {*/
+/*    section {*/
+/*        padding: 0 calc(50% - 270px);*/
+/*    }*/
+/*}*/
 
-@media (min-width: 768px) {
-    section {
-        padding: 0 calc(50% - 360px);
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    section {*/
+/*        padding: 0 calc(50% - 360px);*/
+/*    }*/
+/*}*/
 
 @media (min-width: 992px) {
     section {
