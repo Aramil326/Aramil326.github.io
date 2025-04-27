@@ -1,7 +1,7 @@
 const img = document.querySelector('.hero-image');
 
 function updateImageSrc() {
-    if (window.matchMedia('(max-width: 599px)').matches) {
+    if (window.matchMedia('(max-width: 1290px)').matches) {
         img.src = 'images/img10.jpg';
     } else {
         img.src = 'images/first.jpg';
