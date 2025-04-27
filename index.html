@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Свадьба Арамиля и Сабины</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+            rel="stylesheet">
+</head>
+<body>
+
+<!-- Блок приглашения -->
+<section class="invitation">
+    <h1 class="invitation__title invitation__title--large">Арамиль и Сабина</h1>
+    <h2 class="invitation__date invitation__date--main">08.08.2025</h2>
+    <h2 class="invitation__subtitle">Приглашение на свадьбу</h2>
+</section>
+
+<img src="images/first.jpg" alt="" class="hero-image block">
+
+<!-- Блок "Мы женимся" -->
+<section class="wedding block">
+    <h2 class="wedding__heading">Мы женимся</h2>
+    <h2 class="wedding__heading_name"></h2>
+    <p class="wedding__text"></p>
+    <div class="wedding__date-line">
+        <div class="wedding__line"></div>
+        <h3 class="wedding__date wedding__date--highlight">8 августа 2025 года</h3>
+        <div class="wedding__line"></div>
+    </div>
+</section>
+
+<!-- Список гостей -->
+<section class="guests block">
+    <h2 class="guests__heading">Этот прекрасный день мы хотим провести в кругу самых близких людей:</h2>
+    <div class="guests__columns" id="columns"></div>
+</section>
+
+<section class="block">
+    <h2 class="timer__heading">До нашей свадьбы осталось:</h2>
+    <div class="timer">
+        <div class="timer__items">
+            <div class="timer__item timer__days">00</div>
+            <div class="timer__item timer__hours">00</div>
+            <div class="timer__item timer__minutes">00</div>
+            <div class="timer__item timer__seconds">00</div>
+        </div>
+    </div>
+</section>
+
+<!-- Программа мероприятия -->
+<section class="program block">
+    <h2 class="program__heading">Программа мероприятия</h2>
+
+    <div class="program__list">
+        <!-- Повторяющийся элемент карточки -->
+        <template id="program-card-template">
+            <div class="program-card block">
+                <div class="program-card__image-wrapper">
+                    <img src="" alt="" class="program-card__image">
+                </div>
+                <div class="program-card__content">
+                    <h3 class="program-card__title"></h3>
+                    <ul class="program-card__info">
+                        <!-- li заполнится через JS -->
+                    </ul>
+                </div>
+            </div>
+        </template>
+    </div>
+</section>
+
+<!-- Цветовая гамма -->
+<section class="colors block">
+    <h2 class="colors__heading">Нам будет приятно, если вы поддержите стилистику нашей свадьбы:</h2>
+    <div class="colors__list" id="colors-container"></div>
+</section>
+
+
+
+<section class="contact_info block">
+    <div class="contact_info__image-wrapper">
+        <img src="images/img4.jpg" alt="" class="contact_info__image">
+    </div>
+    <div class="contact_info__content block">
+        <div>
+            <h3 class="contact_info__title block">
+                Мы вас очень ждём и будем счастливы видеть на нашей свадьбе!
+            </h3>
+            <p class="contact_info_text block">И надеемся, что этот волшебный день надолго останется у вас в памяти.</p>
+        </div>
+
+        <img src="images/img5.svg" alt="" class="contact_info__content_image block">
+
+        <div>
+            <p class="contact_info_text block">Если будут вопросы, позвоните нам</p>
+
+            <h3 class="contact_info__number">
+                Арамиль: <a href="tel:+79270316054">+7(927)-031-60-54</a>
+            </h3>
+            <h3 class="contact_info__number">
+                Сабина: <a href="tel:+79173767075">+7(917)-376-70-75</a>
+            </h3>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script src="timer.js"></script>
+<script src="map.js"></script>
+<script src="queyParams.js"></script>
+</body>
+</html>

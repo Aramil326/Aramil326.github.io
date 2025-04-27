@@ -1,0 +1,372 @@
+/* style.css */
+
+:root {
+    --headind-width: 70%;
+    --second-color: #dbaf96;
+}
+
+/* Сброс */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Cormorant', serif;
+    color: #454545;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.gold {
+    color: var(--second-color);
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+
+/* Общие отступы для секций */
+section {
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+
+.block {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 1s, opacity 0.5s;
+}
+
+.block._visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Сетки и адаптив */
+@media (min-width: 576px) {
+    section {
+        padding: 0 calc(50% - 270px);
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 0 calc(50% - 360px);
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 0 calc(50% - 480px);
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        padding: 0 calc(50% - 590px);
+    }
+}
+
+/* ============================
+   Блок Invitation
+   ============================ */
+.invitation {
+    text-align: center;
+}
+
+.invitation__title {
+    margin-top: 50px;
+    font-size: 80px;
+    line-height: 96px;
+}
+
+.invitation__subtitle {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: var(--second-color);
+    font-weight: 300;
+}
+
+.invitation__date {
+    font-size: 40px;
+    color: #454545;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.invitation__title--large {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+/* ============================
+   Hero image
+   ============================ */
+.hero-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* ============================
+   Блок Wedding
+   ============================ */
+.wedding {
+    text-align: center;
+}
+
+.wedding__heading {
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.wedding__heading_name {
+    width: 460px;
+
+    text-transform: none;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 auto 50px auto;
+}
+
+.wedding__text {
+    font-size: 20px;
+    text-transform: none;
+    width: 460px;
+    margin: 0 auto 30px;
+    text-align: start;
+}
+
+.wedding__text:first-of-type {
+    margin-bottom: 20px;
+}
+
+.wedding__date-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.wedding__line {
+    width: 460px;
+    height: 1px;
+    background-color: var(--second-color);
+    opacity: .6;
+}
+
+.wedding__date {
+    font-size: 50px;
+    text-transform: none;
+    color: var(--second-color);
+}
+
+.wedding__date--highlight {
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+/* ============================
+   Блок Guests
+   ============================ */
+.guests__heading {
+    font-size: 40px;
+    width: var(--headind-width);
+    margin-bottom: 50px;
+    text-align: start;
+    font-weight: 300;
+}
+
+.guests__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guests__column {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.guests__item {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+/* ============================
+   Блок Program
+   ============================ */
+.program__heading {
+    font-size: 40px;
+    width: var(--headind-width);
+    margin-bottom: 80px;
+    text-align: start;
+    font-weight: 300;
+
+}
+
+.program-card {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.program-card__image-wrapper {
+    margin-right: 30px;
+}
+
+.program-card__image {
+    display: block;
+    width: 300px;
+}
+
+.program-card__content {
+    flex: 1;
+    font-weight: 300;
+}
+
+.program-card__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.program-card__info {
+    list-style: none;
+    font-weight: 300;
+}
+
+.program-card__info-item {
+    display: flex;
+    font-weight: 300;
+    height: 80px;
+    border-top: 1px solid var(--second-color);
+    align-items: center;
+}
+
+.program-card__info-item:last-child {
+    border-bottom: 1px solid var(--second-color);
+}
+
+.program-card__info-item h4 {
+    width: 40%;
+    font-size: 24px;
+    text-transform: none;
+    font-weight: 300;
+}
+
+.program-card__info-item h4:last-child {
+    width: 60%;
+}
+
+/* ============================
+   Блок Colors
+   ============================ */
+.colors__heading, .timer__heading {
+    font-size: 40px;
+    width: var(--headind-width);
+    margin-bottom: 50px;
+    text-align: start;
+    font-weight: 300;
+}
+
+.colors__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors__item {
+    width: 140px;
+    height: 220px;
+    border-radius: 140px;
+    opacity: .6;
+}
+
+
+/* ============================
+   Блок contact
+   ============================ */
+
+.contact_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_info__image-wrapper {
+    width: 45%;
+}
+
+.contact_info__image {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--second-color);
+}
+
+.contact_info__content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_info__content_image {
+    width: 30%;
+}
+
+.contact_info__title, .contact_info__number {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact_info__number {
+    text-transform: none;
+}
+
+.contact_info_text {
+    font-size: 20px;
+    text-transform: none;
+}
+
+.contact_info_text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* ============================
+   Блок timer
+   ============================ */
+
+.timer__items {
+    display: flex;
+    font-size: 80px;
+}
+.timer__item {
+    font-size: 100px;
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
