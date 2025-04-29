@@ -244,7 +244,7 @@ section {
 /* ============================
    Блок Colors
    ============================ */
-.colors__heading, .timer__heading {
+.colors__heading, .timer__heading, .history__heading {
     font-size: 40px;
     width: var(--headind-width);
     margin-bottom: 30px;
@@ -256,6 +256,12 @@ section {
     text-transform: none;
     font-weight: 300;
     margin-bottom: 50px;
+}
+
+.history__heading__text {
+    text-transform: none;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .colors__list {
@@ -477,6 +483,11 @@ section {
     .colors__heading__text {
         font-size: 20px;
         margin-bottom: 40px;
+    }
+
+    .history__heading__text {
+        font-size: 20px;
+        margin-bottom: 7px;
     }
 
     .colors__item {
