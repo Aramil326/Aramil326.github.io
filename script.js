@@ -61,14 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll);
 
     // Цветовые блоки
-    const colors = ['#FFE2E2', '#DAE9FF', '#D7FFD9', '#CCFFF3', '#EEDBFF', '#FFE9E4'];
+    const colors = ['#F4DCDC', '#D3C8AA', '#D3E0A8', '#A8E0C0', '#A8DDE0', '#B5C7E3', '#B59AB5'];
     const colorsContainer = document.getElementById('colors-container');
     colors.forEach(color => {
-        const div = document.createElement('div');
-        div.className = 'colors__item';
-        div.style.backgroundColor = color;
-        div.style.border = `1px solid ${adjustColor(color, -50)}`;
-        colorsContainer.appendChild(div);
+        const colors = document.createElement('div');
+        colors.className = 'colors__item__box';
+
+        const halfUp = document.createElement('div');
+        halfUp.className = 'colors__item__up';
+        halfUp.style.backgroundColor = color;
+        halfUp.style.border = `1px solid ${adjustColor(color, -50)}`;
+
+        const halfDown = document.createElement('div');
+        halfDown.className = 'colors__item__down';
+        halfDown.style.backgroundColor = adjustColor(color, -150);
+        halfDown.style.border = `1px solid ${adjustColor(color, -150)}`;
+        colors.appendChild(halfUp);
+        colors.appendChild(halfDown);
+
+
+        colorsContainer.appendChild(colors);
     });
 
     function adjustColor(hex, amount) {

@@ -269,11 +269,18 @@ section {
     justify-content: space-between;
 }
 
-.colors__item {
+.colors__item__up, .colors__item__down {
     width: 140px;
-    height: 220px;
-    border-radius: 140px;
+    height: 110px;
     opacity: .6;
+}
+
+.colors__item__up {
+    border-radius: 140px 140px 0 0;
+}
+
+.colors__item__down {
+    border-radius: 0 0 140px 140px;
 }
 
 
@@ -490,9 +497,9 @@ section {
         margin-bottom: 7px;
     }
 
-    .colors__item {
+    .colors__item__up, .colors__item__down {
         width: 50px;
-        height: 80px;
+        height: 40px;
     }
 
     .contact_info {
