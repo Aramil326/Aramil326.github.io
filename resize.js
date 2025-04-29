@@ -10,4 +10,4 @@ function updateImageSrc() {
 
 updateImageSrc(); // обновить сразу при загрузке
 
-window.addEventListener('resize', updateImageSrc); // обновлять при изменении размера
+window.addEventListener('DOMContentLoaded', updateImageSrc); // обновлять при изменении размера
