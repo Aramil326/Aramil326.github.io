@@ -10,6 +10,7 @@
     <link
             href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
             rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -40,20 +41,106 @@
     <div class="guests__columns" id="columns"></div>
 </section>
 
+<!-- Наша история -->
 <section class="block">
     <h2 class="history__heading">Наша история</h2>
-    <h2 class="history__heading__text">
-        Познакомились мы в Школе 21 - школе программирования от Сбера.
-    </h2>
-    <h2 class="history__heading__text">
-        На тот момент Сабина уже полгода училась на основном потоке и была трайб-мастером — куратором группы, в которую
-        на интенсив пришёл Арамиль. Наши пути впервые пересеклись именно там: Сабина проводила встречи для трайба, на
-        которые ходил Арамиль вместе с остальными участниками
-    </h2>
 
-    <h2 class="history__heading__text">
-        После того как Арамиль успешно прошёл интенсив и поступил на основное обучение, мы начали понемногу общаться.
-    </h2>
+    <div id="loveStoryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Слайд 1 -->
+            <div class="carousel-item active">
+                <img src="images/img10.1.JPG" class="d-block w-100" alt="Знакомство">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="carousel-item">
+                <img src="images/img12.JPG" class="d-block w-100" alt="Знакомство">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="carousel-item">
+                <img src="images/img11.JPG" class="d-block w-100" alt="Первые встречи">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 4 -->
+            <div class="carousel-item">
+                <img src="images/img13.JPG" class="d-block w-100" alt="Волонтерство">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 5 -->
+            <div class="carousel-item">
+                <img src="images/img14.JPG" class="d-block w-100" alt="Свадьба 2022">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 6 -->
+            <div class="carousel-item">
+                <img src="images/img15.JPG" class="d-block w-100" alt="Фотографии 2022г">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 7 -->
+            <div class="carousel-item">
+                <img src="images/img16.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 8 -->
+            <div class="carousel-item">
+                <img src="images/img17.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 9 -->
+            <div class="carousel-item">
+                <img src="images/img18.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 10 -->
+            <div class="carousel-item">
+                <img src="images/img19.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 11 -->
+            <div class="carousel-item">
+                <img src="images/img20.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+            <!-- Слайд 12 -->
+            <div class="carousel-item">
+                <img src="images/img21.JPG" class="d-block w-100" alt="Перейдем к самому интересному">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </section>
 
 <section class="block">
@@ -132,5 +219,6 @@
 <script src="timer.js"></script>
 <script src="queryParams.js"></script>
 <script src="resize.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

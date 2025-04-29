@@ -534,3 +534,22 @@ section {
 
 @media (min-width: 1024px) {
 }
+
+/* Адаптация карусели */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
