@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         finalName2 = name2
     }
 
+
+
     // Вставляем правильный текст
     if (name1 && name2) {
         headingEl.textContent = `И приглашаем Вас на нашу свадьбу, дорогие ${finalName1} и ${finalName2}`;
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (name1) {
         headingEl.textContent = `И приглашаем Тебя на нашу свадьбу, ${finalName1}`;
         wedding__text.textContent = `Для нас очень важно,
-        чтобы Ты смог разделить с нами самое счастливое мгновение в нашей жизни. Порадуй нас
+        чтобы Ты ${guestsWomen.includes(name1) ? 'смогла' : 'смог'} разделить с нами самое счастливое мгновение в нашей жизни. Порадуй нас
         своим присутствием:`
     } else {
         // Если параметров нет, можно скрыть блок или вставить какое-то дефолтное сообщение
@@ -341,6 +343,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "Николай",
         "София"
     ];
+
+    const guestsWomen = [
+        "Анелия Апа",
+        "Айсель",
+        "Алёна",
+        "Таня",
+        "Настя",
+        "Люба",
+    ]
 
     const guestsListNormal = [
         "Папа Арамиля",
