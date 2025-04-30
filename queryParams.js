@@ -403,7 +403,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Таня",
         "Настя",
         "Николай",
-        "София"
+        "София",
+        "Захар",
+        "Люба",
     ];
 
     if (
