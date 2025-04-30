@@ -22,7 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
         finalName2 = name2
     }
 
-
+    const guestsWomen = [
+        "Анелия Апа",
+        "Айсель",
+        "Алёна",
+        "Таня",
+        "Настя",
+        "Люба",
+    ]
 
     // Вставляем правильный текст
     if (name1 && name2) {
@@ -343,15 +350,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "Николай",
         "София"
     ];
-
-    const guestsWomen = [
-        "Анелия Апа",
-        "Айсель",
-        "Алёна",
-        "Таня",
-        "Настя",
-        "Люба",
-    ]
 
     const guestsListNormal = [
         "Папа Арамиля",
