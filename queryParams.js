@@ -156,7 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Таня",
         "Настя",
         "Николай",
-        "София"
+        "София",
+        "Захар",
+        "Люба",
     ];
 
     const guestsListSabinaWithParents = [
@@ -220,7 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Таня",
         "Настя",
         "Николай",
-        "София"
+        "София",
+        "Захар",
+        "Люба",
     ];
 
     const guestsListAramil = [
@@ -284,7 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Таня",
         "Настя",
         "Николай",
-        "София"
+        "София",
+        "Захар",
+        "Люба",
     ];
 
     const guestsListSabina = [
@@ -348,7 +354,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Таня",
         "Настя",
         "Николай",
-        "София"
+        "София",
+        "Захар",
+        "Люба",
     ];
 
     const guestsListNormal = [
