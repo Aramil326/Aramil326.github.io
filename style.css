@@ -366,6 +366,11 @@ section {
     right: -15px;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 100px!important;
+    height: 100px!important;
+}
+
 
 @media (min-width: 1200px) {
     section {
