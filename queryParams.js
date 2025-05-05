@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (name1 === "Папа Арамиля" && name2 === "Мама Арамиля") {
         finalName1 = "Папа"
         finalName2 = "Мама"
+    } else if (name1 === "Нэнэй Ляля" && name2 === "Нэнэй Назифа") {
+        finalName1 = "Нэнэй Ляля"
+        finalName2 = "Картэтэй"
     } else {
         finalName1 = name1
         finalName2 = name2
